@@ -1,0 +1,13 @@
+{
+  "name": "AI My Money",
+  "short_name": "AI My Money",
+  "description": "Your AI-powered private wealth operating system.",
+  "start_url": "/app",
+  "display": "standalone",
+  "background_color": "#f6f2ea",
+  "theme_color": "#15201a",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
