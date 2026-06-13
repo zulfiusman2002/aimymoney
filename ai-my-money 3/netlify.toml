@@ -1,0 +1,35 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[functions."analyze"]
+  timeout = 30
+
+[functions."ai-chat"]
+  timeout = 30
+
+[functions."intelligence"]
+  timeout = 30
+
+[functions."analyze-screenshot"]
+  timeout = 30
+
+[functions."learning-card"]
+  timeout = 30
+
+[functions."anthropic-test"]
+  timeout = 30
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
